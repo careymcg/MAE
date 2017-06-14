@@ -1,0 +1,151 @@
+PE or MAE                               1        1 is MAE; 2 PE
+Number of simulations                   5
+Number of projection years              3
+Number of spawning time-space areas     1
+Number of ages                          50
+Number of boxes (not spawning related)  2
+
+Environment pre-DD (EnvPreDD)           0
+Burn in Time                            2
+Movement Burn In Time                   1
+Global DD (GlobalDD)                    1
+FindVariance                            1
+rho                                     1.0
+
+Natural Mortality                       0.12
+Steepness                               0.6
+r0                                      1000.0
+Linf von bert                           442.0
+kpar von bert                           0.33
+t0par von bert                          0.75
+alpha weight-length                     0.00000168
+beta weight-length                      3.0
+Age at 50% maturity                     7.5
+Age at 95% maturity                     14.0
+      
+Youngest beta variance                  0.001
+Oldest beta variance                    0.001
+Youngest beta mean                      0.067
+Oldest beta mean                        0.875
+Ontogenetic movement of eggs            1
+Number of ontogenetic groups            8
+Ontogenetic movement groups             1  9  11 13 15 18 21 27
+
+Double normal selectivity               0
+Logistic Age at 50% selectivity         3.0
+Logistic Age at 95% selectivity         6.0
+Double normal age at full sel. Sfull    12.0
+Double normal left variance             100.0
+Double normal right variance            10.0
+
+Larval movement parameters (MoveOut is defined by size of reserve and MoveIn; can be adjusted or expanded later)
+Two box larval movement? (1= yes)       0
+MPA size                                0.20
+Larval move from MPA to fished area     0.0
+Post density dependent larval move?     0
+
+Specifications for the closed areas
+Number of closed areas                  1    !super critical to make this 0 if no MPA - can't just make MPA year large!
+MPAYear (0 or MinPYr for this project)  0
+Lower limit (NS)                        1  4
+Upper limit (NS)                        1  5
+
+Parameters for creating environmental deviates
+Number of sigmaR values NsigmaR         6
+Target Output Recruitment CV            0.5
+Low Tolerance (hpar,MeanDays,HFpar)     0.0005
+High tolerance (MSY,fmult objfuns)      0.001
+Maximum number of iterations            30
+
+SigmaRvec - this can be however long it's specified to be by Number of sigmaR values
+0.0000001
+0.45
+0.50
+0.55
+0.60
+0.65
+
+Number of fishing mortality values      21
+Vector of F values
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+0.12
+0.14
+0.16
+0.18
+0.20
+0.22
+0.24
+0.26
+0.28
+0.30
+0.32
+0.34
+0.36
+0.38
+0.40
+
+MAE parameters
+MAE control?                            0       1=yes (testing MAE, but taking out age-structure effect; 0 = testing MAE, doing it full on
+Findh (find h for correct steep)        1         1=yes; 0 = no
+h increment distance                    0.1
+Mean days of starvation                 10.342
+SigmaD (sd for starvation distn)        0.6
+Use Berkeley eqn for mat age->d50%mort  2       1=berkeley; 2 = linear; 3=exponential; 4 = logarithmic
+d95-d50 for days starve:survival curve  2.0
+SRsims                                  2
+Nbins (for binning SSB data)            100
+
+Number of MeanDays in vec               6
+MeanDaysVec
+8.0
+12.0
+16.0
+20.0
+24.0
+28.0
+
+FindFmultiply                           1
+Number of fmultiply values              6
+1.0
+3.0
+5.0
+7.0
+9.0
+11.0
+
+SRsimsNFpar                             21
+0.0
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+0.07
+0.08
+0.09
+0.10
+0.11
+0.12
+0.13
+0.14
+0.15
+0.16
+0.17
+0.18
+0.19
+0.20
+
+Number of Fs in FindhFvec               6
+FindhFvec - always start at 0.0.
+0.00
+0.06
+0.12
+0.18
+0.24
+0.30
